@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html class="no-js">
     <head>
+	<!-- JQuerry para la galeria-->
+    
+	<script src="path/to/jquery" type="text/javascript"></script>
+	<script src="/js/jquery.tilesgallery.js"  type="text/javascript"></script>
+	<link href="/css/jquery-tilesgallery.css" rel="Stylesheet" />
+	
+	    
         <!-- Basic Page Needs
         ================================================== -->
         <meta charset="utf-8">
@@ -100,33 +107,19 @@
 Slider Section Start
 ================================================== -->
 <section id="hero-area" >
-<div class="container" id="container">
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <div class="block wow fadeInUp" data-wow-delay=".3s">
-                
-                <!-- Slider -->
-                <section class="cd-intro">
-                    <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
-                    <span>BIENVENIDO AL ESTUDIO EN PLAYAMAR</span><br>
-                    <span class="cd-words-wrapper">
-                        <b class="is-visible">SOL Y PLAYA</b>
-                        <b>BUENA UBICACION</b>
-                        <b>PRECIO Y CALIDADES</b>
-                    </span>
-                    </h1>
-                    </section> <!-- cd-intro -->
-                    <!-- /.slider -->
-                    <h2 class="wow fadeInUp animated" data-wow-delay=".6s" >
-                        Precioso estudio ubicado en el corazón de Torremolinos, con vistas al mar<br> en urbanización privada "Los tres Caballos" <br> con multitud de servicios, como piscina, pista de tenis y acceso al paseo marítimo
-                    </h2>
-                    <a class="btn-lines dark light wow fadeInUp animated btn btn-default btn-green hvr-bounce-to-right" data-wow-delay=".9s" href="descripcion.html" target="container">Mas información</a>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div id="galeria">
+   		<p><img src="/images/apartamento/1.jpg" /></p>
+    		<p><img src="/images/apartamento/3.jpg" /></p>
+    		<p><img src="/images/apartamento/4.jpg" /></p> 
+		<p><img src="/images/apartamento/9.jpg" /></p> 
+   	 </div>
 </section><!--/#main-slider-->
-
+ <script type="text/javascript">
+$(function () {
+    $(".tiles").tilesGallery();
+})		
+</script>
+	    
 <!--
 ==================================================
 About Section Start
